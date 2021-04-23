@@ -22,15 +22,14 @@ Account.prototype.afterWithdrawBalance = function() {
 $(document).ready(function() {
   $("#rejisterButton").click(function(event) {
     event.preventDefault();
-    $("#depositButton").show();
-    $("#withdrawButton").show();
-    $(".rejister").hide();
-    $("#userAccount").show();
     let userName = $("input#name").val();
     let userBalance = $("input#initialDeposit").val();
     if (userName.length === 0 || userBalance.length === 0 ) {
       throw new Error;
     }
+    $("#depositButton").show();
+    $("#withdrawButton").show();
+    $("#userAccount").show();
     userBalance = parseInt(userBalance);
     var newAccount = new Account(userBalance, userName);
 
