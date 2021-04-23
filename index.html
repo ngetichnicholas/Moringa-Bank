@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Moringa Bank</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome to Moringa Bank</h2>
+    <form id="moringaForm" name="moringaBankForm" action="">
+      <div class="form-group register">
+        <label for name>Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name..." required>
+        <label for deposit>Initial Deposit</label>
+        <input type="text" class="form-control" id="initialDeposit" placeholder="Enter your initial in Ksh..." required>
+      </div>
+
+      <button class="btn btn-warning" id="rejisterButton">Register</button>
+      <div class="form-group deposit">
+        <label for name>Deposit</label>
+        <input type="text" id="deposit" class="form-control" placeholder="Enter deposit amount..." required>
+      </div>
+      <button class="btn btn-success" id="depositButton">Deposit</button>
+      <div class="form-group withdraw" id="">
+        <label for name>Withdraw</label>
+        <input type="text" id="withdraw" class="form-control" placeholder="Enter amount to Withdraw..." required>
+      </div>
+      <button class="btn btn-danger" id="withdrawButton">Withdraw</button>
+      <div class="alert alert-success fs50" id="userAccount">
+        <p  id="user"></p>
+        <p  id="balance"></p>
+      </div>
+    </form>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
